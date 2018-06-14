@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" href="2.css">
+</head>
+<body>
+<div class="mtt">
+<div class="tt" id="tt1"><p id="p1">1</p></div>
+<div class="tt" id="tt2"><p id="p2">2</p></div>
+<div class="tt" id="tt3"><p id="p3">3</p></div>
+</div>
+
+
+<h3 id="h3"></h3>
+<button onclick="start()">Click</button>
+<script>
+    var i = 0;
+    var txt = "SHUBHAM MATWANDKAR IS ALIVE";
+    var speed = 180;
+    function start(){
+        if(i< txt.length){
+            document.getElementById("h3").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(start, speed); 
+        }
+    }
+</script>
+</body>
+</html>

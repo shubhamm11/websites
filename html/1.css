@@ -1,0 +1,62 @@
+body{
+margin: 0;
+padding:0;
+}
+
+div{
+background-color:#f1f1f2;
+height: 300px;
+text-align:center;
+transition:3s;
+border-bottom:5px inset red;
+}
+div:hover{
+height: 500px;
+border-bottom:10px solid red;
+transition:3s;
+color:red;
+text-shadow: 6px 6px 8px grey;
+}
+
+div:hover h1{
+display:inline;
+}
+
+p{
+	padding-top:250px;
+}
+
+p:hover{
+}
+
+h1{
+display:none;
+}
+@keyword rotateb{
+	from{
+	transform:rotate(360deg);
+	}
+	to{
+	transform:rotate(0deg);
+	}
+}
+button{
+position:static;
+margin:50px;
+width:200px;
+height:50px;
+border:none;
+transition:2s;
+
+}
+
+button:hover{
+transition:2s;
+width:260px;
+heigh:auto;
+box-shadow:-1px 1px 20px darkgrey;
+transform:rotate(360deg);
+animation-name:rotateb;
+animation-duration:5s;
+animation-iteration-count:infinite;
+}
